@@ -1,30 +1,108 @@
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
-/* ------------------------------- 1. Global Styles -------------------------------- */
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid red;*/
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
-/* --------------- 3.1 Reusables ----------------------- */
 
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container {
+    flex: 0 1 1400px;
+    display: flex;
+    flex-direction: column;
+    /*margin: 0 20px;*/
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+#hdr-mn {
+    background: rgb(87,34,205);
+    background: linear-gradient(90deg, rgba(87,34,205,1) 4%, rgba(72,69,228,1) 78%);
+    color: ghostwhite;
+}
 
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    padding: 0 15px;
+}
+
+#hdr-txt {
+    align-items: center;
+    padding: 30px;
+    flex: 0 1 500px;
+}
+
+#hdr-txt p {
+    padding: 10px 0;
+}
+
+#hdr-btn {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ED4385;
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-size: .7em;
+}
 /* --------------- 4.2 Introduction ------------------- */
+#intr__txt {
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 500px;
+    font-family: 'Merriweather', serif;
+}
 
+#intr__txt p {
+    padding: 10px 0;
+    color: #5722CD;
+}
+
+ .inner-container #intr__q {
+    font-size: 0.8em;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
