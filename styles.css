@@ -13,19 +13,39 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
     padding: 0;
     margin: 0;
     /*border: 1px solid red;*/
+    /*max-width: 1800px;*/
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h3{
     font-family: 'Merriweather', serif;
     text-align: center;
 }
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+h3 {
+    font-size: 1.5em;
+}
 
+/* ------------------------------- 3. Layout --------------------------------------- */
+.menu--link {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #5722CD;
+}
+
+.wormline {
+    width: 45px;
+    position: absolute;
+    top: 103%;
+    left: 46%;
+}
+
+.wormline--horizontal {
+    width: 45px;
+}
 
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
@@ -38,6 +58,7 @@ h1 {
     flex: 0 1 1400px;
     display: flex;
     flex-direction: column;
+
     /*margin: 0 20px;*/
 }
 /* --------------- 3.2 Other --------------------------- */
@@ -49,6 +70,7 @@ h1 {
     background: rgb(87,34,205);
     background: linear-gradient(90deg, rgba(87,34,205,1) 4%, rgba(72,69,228,1) 78%);
     color: ghostwhite;
+    padding-bottom: 60px;
 }
 
 #navbar {
@@ -69,7 +91,8 @@ h1 {
 #hdr-txt {
     align-items: center;
     padding: 30px;
-    flex: 0 1 500px;
+    flex: 0 1 700px;
+    position: relative;
 }
 
 #hdr-txt p {
@@ -104,5 +127,40 @@ h1 {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     color: black;
+}
+
+/* --------------- 4.3 Work ------------------- */
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    padding: 20px;
+    max-width: 600px;
+    flex: 0 1 50%;
+}
+
+.poging {
+    margin: 20px;
+    max-width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0 0 50%;
+    font-size: .8em;
+    text-align: center;
+    /*position: relative;*/
+}
+
+.geenidee {
+    justify-content: space-evenly;
+}
+
+#second--article {
+    flex-direction: row-reverse;
+}
+
+#snaperniksvan {
+    max-width: 600px;
+    padding: 0 20px;
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
