@@ -47,7 +47,6 @@ h1, h2, h3, h4 {
 #header {
     background: linear-gradient(90deg, rgba(87, 34, 205, 1) 4%, rgba(72, 69, 228, 1) 78%);
     color: var(--second-txt-color);
-
 }
 
 .header__navbar {
@@ -121,6 +120,7 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    position: relative;
 }
 
 .project:nth-of-type(odd) {
@@ -140,15 +140,19 @@ h1, h2, h3, h4 {
 .project__info-container {
     flex: 0 1 480px;
     padding: 20px 10px;
+    position: relative;
 
 }
 
 .project__info-container h3 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
-.project__squiggle {
-    padding-bottom: 20px;
+.project__info-container h3:after {
+    content: url("/assets/squiggle_line.svg");
+    position: absolute;
+    top: 45px;
+    left: 10px;
 }
 
 .project__link {
@@ -171,8 +175,8 @@ h1, h2, h3, h4 {
 }
 
 .service-block {
-    height: 320px;
-    flex: 0 1 320px;
+    height: 340px;
+    flex: 0 1 340px;
     padding: 30px;
     border: 2px solid var(--main-purple);
     box-shadow: 0 5px 17px -7px rgba(0, 0, 0, 0.9);
@@ -206,7 +210,6 @@ h1, h2, h3, h4 {
 }
 
 .section-form {
-    /*width: 450px;*/
     flex: 0 0 500px;
     display: flex;
     flex-direction: column;
